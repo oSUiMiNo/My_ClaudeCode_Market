@@ -1,0 +1,30 @@
+[project]
+name = "sjis2utf8"
+version = "1.0.0"
+description = "Shift-JIS (CP932) to UTF-8 BOM batch converter for Unity C# files"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["encoding", "shift-jis", "utf-8", "unity", "converter"]
+
+# Python標準ライブラリのみ使用（外部依存なし）
+dependencies = []
+
+[project.scripts]
+sjis2utf8 = "sjis2utf8.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sjis2utf8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.0",
+]

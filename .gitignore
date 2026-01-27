@@ -1,0 +1,17 @@
+# Claude Code
+.cc-attachments/
+.claude/settings.local.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# エディタ
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

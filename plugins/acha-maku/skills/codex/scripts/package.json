@@ -1,0 +1,17 @@
+{
+  "name": "codex-skill-scripts",
+  "version": "1.0.0",
+  "description": "Helper scripts for Codex skill with PTY support",
+  "type": "module",
+  "scripts": {
+    "test": "node codex-helper.mjs --help"
+  },
+  "dependencies": {
+    "node-pty": "^1.0.0",
+    "uuid": "^11.0.0",
+    "strip-ansi": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

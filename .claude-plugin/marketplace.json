@@ -1,0 +1,17 @@
+{
+  "name": "MyMerket",
+  "owner": {
+    "name": "oSUiMiNo"
+  },
+  "metadata": {
+    "description": "個人開発用マーケットプレイス"
+  },
+  "plugins": [
+    {
+      "name": "Acha Maku",
+      "source": "./plugins/acha_maku",
+      "description": "個人開発用",
+      "version": "0.0.0"
+    }
+  ]
+}
