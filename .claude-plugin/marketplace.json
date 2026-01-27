@@ -1,5 +1,5 @@
 {
-  "name": "MyMerket",
+  "name": "my-market",
   "owner": {
     "name": "oSUiMiNo"
   },
@@ -8,8 +8,8 @@
   },
   "plugins": [
     {
-      "name": "Acha Maku",
-      "source": "./plugins/acha_maku",
+      "name": "acha-maku",
+      "source": "./plugins/acha-maku",
       "description": "個人開発用",
       "version": "0.0.0"
     }

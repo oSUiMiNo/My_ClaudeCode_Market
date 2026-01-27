@@ -1,5 +1,7 @@
 {
-  "name": "Acha Maku",
+  "name": "acha-maku",
   "version": "0.0.0",
-  "description": "個人開発用"
+  "description": "個人開発用",
+  "commands": ["./commands/"],
+  "skills": ["./skills/"]
 }
