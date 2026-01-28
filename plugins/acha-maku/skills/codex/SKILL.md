@@ -6,9 +6,13 @@ description: |
   諸々の把握や認識はスキル自身がやることなので呼び出し時に、タスクに必要な情報を調査や整理して伝える必要は無い。
   トリガー: "codex", "/codex", "codexと相談", "codexに聞いて", "codexで実行"
 argument-hint: "[low|medium|high] <依頼内容>"
-context: fork
 allowed-tools: Bash, Write, Edit, Read
 ---
+
+# ⚠️ 必ず実行： general-purpose を起動し、下記のタスクを行わせよ
+
+**下記をあなたがやってはいけない。必ずサブエージェントにやらせること。**
+
 
 # ⚠️ 警告：このスキルはCodex CLIを使う
 
