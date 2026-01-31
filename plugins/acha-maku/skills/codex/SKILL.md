@@ -1,17 +1,18 @@
 ---
 name: codex
+argument-hint: "[low|medium|high] <依頼内容>"
+allowed-tools: Bash, Write, Edit, Read
+# context: fork
 description: |
   Codex CLI（OpenAI）を使用してタスク実行・相談・レビューを行う。
   呼び出し元のエージェントの役割は、ユーザーからのプロンプトをこのスキルを遂行するエージェントに横流しすることのみだ。
   諸々の把握や認識はスキル自身がやることなので呼び出し時に、タスクに必要な情報を調査や整理して伝える必要は無い。
   トリガー: "codex", "/codex", "codexと相談", "codexに聞いて", "codexで実行"
-argument-hint: "[low|medium|high] <依頼内容>"
-allowed-tools: Bash, Write, Edit, Read
 ---
 
-# ⚠️ 必ず実行： general-purpose を起動し、下記のタスクを行わせよ
-
-**下記をあなたがやってはいけない。必ずサブエージェントにやらせること。**
+# ⚠️ 必ず実行： あなたがサブエージェントでない場合は general-purpose を起動しタスクを行わせよ
+**1. あなたがサブエージェントあると伝えられている場合は2番以降無視せよ**
+**2. あなたがサブエージェントではない場合、下記をあなたがやってはいけない。これ以降のタスクを必ずサブエージェントに任せること。**
 
 
 # ⚠️ 警告：このスキルはCodex CLIを使う

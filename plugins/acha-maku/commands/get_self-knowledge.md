@@ -1,6 +1,6 @@
 ---
 name: get_self-knowledge
-context: fork
+# context: fork
 agent: general-purpose
 description: |
   メインエージェントがユーザーのプロンプトに含まれるトピックに関連するナレッジを素早く参照するために使用。
@@ -17,6 +17,9 @@ description: |
 
 argument-hint: [keyword]
 ---
+# ⚠️ 必ず実行： あなたがサブエージェントでない場合は general-purpose を起動しタスクを行わせよ
+**1. あなたがサブエージェントあると伝えられている場合は2番以降無視せよ**
+**2. あなたがサブエージェントではない場合、下記をあなたがやってはいけない。これ以降のタスクを必ずサブエージェントに任せること。**
 
 # Self-Knowledge Path Resolver
 

@@ -1,9 +1,12 @@
 ---
 name: build_self-dir
 allowed-tools: Read, Write, Glob, Bash(mkdir *), Bash(test *), Bash(touch *), Bash(find *)
-context: fork
+# context: fork
 description: Claude Code プロジェクト用の `.claude/` ディレクトリ構造を初期化するスキル。
 ---
+# ⚠️ 必ず実行： あなたがサブエージェントでない場合は general-purpose を起動しタスクを行わせよ
+**1. あなたがサブエージェントあると伝えられている場合は2番以降無視せよ**
+**2. あなたがサブエージェントではない場合、下記をあなたがやってはいけない。これ以降のタスクを必ずサブエージェントに任せること。**
 
 ## 実行内容
 
